@@ -95,7 +95,7 @@
             this.lblError.AutoSize = true;
             this.lblError.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblError.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblError.Location = new System.Drawing.Point(471, 311);
+            this.lblError.Location = new System.Drawing.Point(471, 283);
             this.lblError.Name = "lblError";
             this.lblError.Size = new System.Drawing.Size(169, 15);
             this.lblError.TabIndex = 6;
@@ -111,7 +111,7 @@
             this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
             this.btnLogin.HoverState.Parent = this.btnLogin;
-            this.btnLogin.Location = new System.Drawing.Point(424, 252);
+            this.btnLogin.Location = new System.Drawing.Point(424, 224);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.ShadowDecoration.Parent = this.btnLogin;
             this.btnLogin.Size = new System.Drawing.Size(240, 45);
@@ -138,7 +138,7 @@
             this.txtPassword.HoverState.Parent = this.txtPassword;
             this.txtPassword.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtPassword.IconLeft")));
             this.txtPassword.IconLeftSize = new System.Drawing.Size(26, 26);
-            this.txtPassword.Location = new System.Drawing.Point(424, 170);
+            this.txtPassword.Location = new System.Drawing.Point(424, 142);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '\0';
