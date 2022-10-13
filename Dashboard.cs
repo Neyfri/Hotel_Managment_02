@@ -40,6 +40,9 @@ namespace Hotel_Management_02
         private void btnCheckOut_Click(object sender, EventArgs e)
         {
             MovingPanel.Left = btnCheckOut.Left + 20;
+
+            uC_CustomerCheckout1.Visible = true;
+            uC_CustomerCheckout1.BringToFront();
         }
 
         private void btnCustomerDet_Click(object sender, EventArgs e)

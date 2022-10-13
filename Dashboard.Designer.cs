@@ -43,6 +43,7 @@
             this.btnExit = new Guna.UI2.WinForms.Guna2CircleButton();
             this.btnMinimize = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.uC_CustomerCheckout1 = new Hotel_Management_02.All_User_Control.UC_CustomerCheckout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -183,6 +184,7 @@
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.Controls.Add(this.uC_CustomerCheckout1);
             this.panel2.Controls.Add(this.uC_CustomerRegistration1);
             this.panel2.Controls.Add(this.uC_AddRoom1);
             this.panel2.Location = new System.Drawing.Point(14, 159);
@@ -247,6 +249,14 @@
             this.guna2Elipse1.BorderRadius = 60;
             this.guna2Elipse1.TargetControl = this;
             // 
+            // uC_CustomerCheckout1
+            // 
+            this.uC_CustomerCheckout1.BackColor = System.Drawing.Color.White;
+            this.uC_CustomerCheckout1.Location = new System.Drawing.Point(0, 0);
+            this.uC_CustomerCheckout1.Name = "uC_CustomerCheckout1";
+            this.uC_CustomerCheckout1.Size = new System.Drawing.Size(1510, 646);
+            this.uC_CustomerCheckout1.TabIndex = 2;
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -283,5 +293,6 @@
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private All_User_Control.UC_AddRoom uC_AddRoom1;
         private All_User_Control.UC_CustomerRegistration uC_CustomerRegistration1;
+        private All_User_Control.UC_CustomerCheckout uC_CustomerCheckout1;
     }
 }
