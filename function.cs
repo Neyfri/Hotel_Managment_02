@@ -48,5 +48,16 @@ namespace Hotel_Management_02
                 MessageBox.Show(ex.Message);
             }
         }
+
+        public SqlDataReader getForCombo(string query)
+        {
+            SqlConnection conn = getConnection();
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = conn;
+            conn.Open();
+            cmd = new SqlCommand(query, conn);
+            SqlDataReader sdr = cmd.ExecuteReader();
+            return sdr;
+        }
     }
 }

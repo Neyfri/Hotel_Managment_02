@@ -32,6 +32,9 @@ namespace Hotel_Management_02
         private void btnCustomerReg_Click(object sender, EventArgs e)
         {
             MovingPanel.Left = btnCustomerReg.Left + 28;
+
+            uC_CustomerRegistration1.Visible = true;
+            uC_CustomerRegistration1.BringToFront();
         }
 
         private void btnCheckOut_Click(object sender, EventArgs e)
@@ -57,6 +60,7 @@ namespace Hotel_Management_02
         private void Dashboard_Load(object sender, EventArgs e)
         {
             uC_AddRoom1.Visible = false;
+            uC_CustomerRegistration1.Visible = false;
             btnAddRoom.PerformClick();
         }
     }
