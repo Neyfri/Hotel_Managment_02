@@ -38,12 +38,13 @@
             this.btnCustomerReg = new Guna.UI2.WinForms.Guna2Button();
             this.btnAddRoom = new Guna.UI2.WinForms.Guna2Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.uC_CustomerRegistration1 = new Hotel_Management_02.All_User_Control.UC_CustomerRegistration();
-            this.uC_AddRoom1 = new Hotel_Management_02.All_User_Control.UC_AddRoom();
             this.btnExit = new Guna.UI2.WinForms.Guna2CircleButton();
             this.btnMinimize = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.uC_CustomerCheckout1 = new Hotel_Management_02.All_User_Control.UC_CustomerCheckout();
+            this.uC_CustomerRegistration1 = new Hotel_Management_02.All_User_Control.UC_CustomerRegistration();
+            this.uC_AddRoom1 = new Hotel_Management_02.All_User_Control.UC_AddRoom();
+            this.uC_CustomerDetails1 = new Hotel_Management_02.All_User_Control.UC_CustomerDetails();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -184,6 +185,7 @@
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.Controls.Add(this.uC_CustomerDetails1);
             this.panel2.Controls.Add(this.uC_CustomerCheckout1);
             this.panel2.Controls.Add(this.uC_CustomerRegistration1);
             this.panel2.Controls.Add(this.uC_AddRoom1);
@@ -191,22 +193,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1303, 514);
             this.panel2.TabIndex = 1;
-            // 
-            // uC_CustomerRegistration1
-            // 
-            this.uC_CustomerRegistration1.BackColor = System.Drawing.Color.White;
-            this.uC_CustomerRegistration1.Location = new System.Drawing.Point(0, 0);
-            this.uC_CustomerRegistration1.Name = "uC_CustomerRegistration1";
-            this.uC_CustomerRegistration1.Size = new System.Drawing.Size(1510, 646);
-            this.uC_CustomerRegistration1.TabIndex = 1;
-            // 
-            // uC_AddRoom1
-            // 
-            this.uC_AddRoom1.BackColor = System.Drawing.Color.White;
-            this.uC_AddRoom1.Location = new System.Drawing.Point(0, 0);
-            this.uC_AddRoom1.Name = "uC_AddRoom1";
-            this.uC_AddRoom1.Size = new System.Drawing.Size(1510, 646);
-            this.uC_AddRoom1.TabIndex = 0;
             // 
             // btnExit
             // 
@@ -257,6 +243,30 @@
             this.uC_CustomerCheckout1.Size = new System.Drawing.Size(1510, 646);
             this.uC_CustomerCheckout1.TabIndex = 2;
             // 
+            // uC_CustomerRegistration1
+            // 
+            this.uC_CustomerRegistration1.BackColor = System.Drawing.Color.White;
+            this.uC_CustomerRegistration1.Location = new System.Drawing.Point(0, 0);
+            this.uC_CustomerRegistration1.Name = "uC_CustomerRegistration1";
+            this.uC_CustomerRegistration1.Size = new System.Drawing.Size(1510, 646);
+            this.uC_CustomerRegistration1.TabIndex = 1;
+            // 
+            // uC_AddRoom1
+            // 
+            this.uC_AddRoom1.BackColor = System.Drawing.Color.White;
+            this.uC_AddRoom1.Location = new System.Drawing.Point(0, 0);
+            this.uC_AddRoom1.Name = "uC_AddRoom1";
+            this.uC_AddRoom1.Size = new System.Drawing.Size(1510, 646);
+            this.uC_AddRoom1.TabIndex = 0;
+            // 
+            // uC_CustomerDetails1
+            // 
+            this.uC_CustomerDetails1.BackColor = System.Drawing.Color.White;
+            this.uC_CustomerDetails1.Location = new System.Drawing.Point(0, 0);
+            this.uC_CustomerDetails1.Name = "uC_CustomerDetails1";
+            this.uC_CustomerDetails1.Size = new System.Drawing.Size(1510, 646);
+            this.uC_CustomerDetails1.TabIndex = 3;
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -294,5 +304,6 @@
         private All_User_Control.UC_AddRoom uC_AddRoom1;
         private All_User_Control.UC_CustomerRegistration uC_CustomerRegistration1;
         private All_User_Control.UC_CustomerCheckout uC_CustomerCheckout1;
+        private All_User_Control.UC_CustomerDetails uC_CustomerDetails1;
     }
 }

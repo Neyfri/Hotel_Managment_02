@@ -22,15 +22,13 @@ namespace Hotel_Management_02.All_User_Control
         private void UC_CustomerCheckout_Load(object sender, EventArgs e)
         {
             query = "SELECT C.cid, C.cname, C.mobile, C.nationality, C.gender, C.dob, C.idproof, C.adress, C.checkin, R.noRooom, R.roomType, R.bed, R.price FROM customer AS C INNER JOIN rooms AS R ON C.room_id = R.idRoom WHERE chekout LIKE 'NO'";
-            DataSet ds = fn.getData(query);
-            DataGridView1.DataSource = ds.Tables[0];
+            getRecord(query);
         }
 
         private void txtName_TextChanged(object sender, EventArgs e)
         {
             query = "SELECT C.cid, C.cname, C.mobile, C.nationality, C.gender, C.dob, C.idproof, C.adress, C.checkin, R.noRooom, R.roomType, R.bed, R.price FROM customer AS C INNER JOIN rooms AS R ON C.room_id = R.idRoom WHERE cname LIKE '"+txtName.Text+"%' AND chekout = 'NO'";
-            DataSet ds = fn.getData(query);
-            DataGridView1.DataSource = ds.Tables[0];
+            getRecord(query);
         }
         int id;
         private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -73,6 +71,12 @@ namespace Hotel_Management_02.All_User_Control
         private void UC_CustomerCheckout_Leave(object sender, EventArgs e)
         {
             ClearAll();
+        }
+
+        private void getRecord(string query)
+        {
+            DataSet ds = fn.getData(query);
+            DataGridView1.DataSource = ds.Tables[0];
         }
     }
 }

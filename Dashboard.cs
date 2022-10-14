@@ -48,6 +48,8 @@ namespace Hotel_Management_02
         private void btnCustomerDet_Click(object sender, EventArgs e)
         {
             MovingPanel.Left = btnCustomerDet.Left + 20;
+            uC_CustomerDetails1.Visible = true;
+            uC_CustomerDetails1.BringToFront();
         }
 
         private void btnEmployee_Click(object sender, EventArgs e)
