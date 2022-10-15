@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_CustomerRegistration));
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -55,7 +59,7 @@
             this.label12 = new System.Windows.Forms.Label();
             this.txtPrice = new Guna.UI2.WinForms.Guna2TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.btnAllocate = new Guna.UI2.WinForms.Guna2Button();
+            this.btnAllocate = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -451,6 +455,7 @@
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.PasswordChar = '\0';
             this.txtPrice.PlaceholderText = "Enter Price";
+            this.txtPrice.ReadOnly = true;
             this.txtPrice.SelectedText = "";
             this.txtPrice.ShadowDecoration.Parent = this.txtPrice;
             this.txtPrice.Size = new System.Drawing.Size(331, 36);
@@ -469,25 +474,67 @@
             // 
             // btnAllocate
             // 
-            this.btnAllocate.BorderRadius = 23;
-            this.btnAllocate.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
-            this.btnAllocate.BorderThickness = 1;
-            this.btnAllocate.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
-            this.btnAllocate.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(221)))));
-            this.btnAllocate.CheckedState.ForeColor = System.Drawing.Color.White;
-            this.btnAllocate.CheckedState.Parent = this.btnAllocate;
-            this.btnAllocate.CustomImages.Parent = this.btnAllocate;
-            this.btnAllocate.FillColor = System.Drawing.Color.White;
-            this.btnAllocate.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAllocate.AllowToggling = false;
+            this.btnAllocate.AnimationSpeed = 200;
+            this.btnAllocate.AutoGenerateColors = false;
+            this.btnAllocate.BackColor = System.Drawing.Color.Transparent;
+            this.btnAllocate.BackColor1 = System.Drawing.Color.White;
+            this.btnAllocate.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAllocate.BackgroundImage")));
+            this.btnAllocate.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Dash;
+            this.btnAllocate.ButtonText = "Allocate Customer";
+            this.btnAllocate.ButtonTextMarginLeft = 0;
+            this.btnAllocate.ColorContrastOnClick = 45;
+            this.btnAllocate.ColorContrastOnHover = 45;
+            this.btnAllocate.Cursor = System.Windows.Forms.Cursors.Hand;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btnAllocate.CustomizableEdges = borderEdges1;
+            this.btnAllocate.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnAllocate.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnAllocate.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnAllocate.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnAllocate.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.btnAllocate.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold);
             this.btnAllocate.ForeColor = System.Drawing.Color.Black;
-            this.btnAllocate.HoverState.Parent = this.btnAllocate;
-            this.btnAllocate.Location = new System.Drawing.Point(1224, 510);
+            this.btnAllocate.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAllocate.IconMarginLeft = 11;
+            this.btnAllocate.IconPadding = 10;
+            this.btnAllocate.IconRightCursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAllocate.IdleBorderColor = System.Drawing.Color.Black;
+            this.btnAllocate.IdleBorderRadius = 44;
+            this.btnAllocate.IdleBorderThickness = 1;
+            this.btnAllocate.IdleFillColor = System.Drawing.Color.White;
+            this.btnAllocate.IdleIconLeftImage = null;
+            this.btnAllocate.IdleIconRightImage = null;
+            this.btnAllocate.IndicateFocus = false;
+            this.btnAllocate.Location = new System.Drawing.Point(1079, 499);
             this.btnAllocate.Name = "btnAllocate";
-            this.btnAllocate.ShadowDecoration.Parent = this.btnAllocate;
-            this.btnAllocate.Size = new System.Drawing.Size(180, 45);
-            this.btnAllocate.TabIndex = 27;
-            this.btnAllocate.Text = "Allocate Room";
-            this.btnAllocate.Click += new System.EventHandler(this.btnAllocate_Click);
+            stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties1.BorderRadius = 44;
+            stateProperties1.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties1.BorderThickness = 1;
+            stateProperties1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties1.ForeColor = System.Drawing.Color.White;
+            stateProperties1.IconLeftImage = null;
+            stateProperties1.IconRightImage = null;
+            this.btnAllocate.onHoverState = stateProperties1;
+            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties2.BorderRadius = 44;
+            stateProperties2.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties2.BorderThickness = 1;
+            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties2.ForeColor = System.Drawing.Color.White;
+            stateProperties2.IconLeftImage = null;
+            stateProperties2.IconRightImage = null;
+            this.btnAllocate.OnPressedState = stateProperties2;
+            this.btnAllocate.Size = new System.Drawing.Size(202, 47);
+            this.btnAllocate.TabIndex = 28;
+            this.btnAllocate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnAllocate.TextMarginLeft = 0;
+            this.btnAllocate.UseDefaultRadiusAndThickness = true;
+            this.btnAllocate.Click += new System.EventHandler(this.btnAllocate_Click_1);
             // 
             // UC_CustomerRegistration
             // 
@@ -521,7 +568,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "UC_CustomerRegistration";
-            this.Size = new System.Drawing.Size(1510, 646);
+            this.Size = new System.Drawing.Size(1439, 646);
             this.Leave += new System.EventHandler(this.UC_CustomerRegistration_Leave);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -532,7 +579,6 @@
 
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2Button btnAllocate;
         private Guna.UI2.WinForms.Guna2TextBox txtPrice;
         private System.Windows.Forms.Label label13;
         private Guna.UI2.WinForms.Guna2ComboBox txtRoomNo;
@@ -557,5 +603,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnAllocate;
     }
 }

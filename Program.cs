@@ -16,7 +16,7 @@ namespace Hotel_Management_02
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login());
+            Application.Run(new FRM_Splash());
         }
     }
 }

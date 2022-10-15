@@ -27,7 +27,25 @@ namespace Hotel_Management_02.All_User_Control
             DataGridView1.DataSource = ds.Tables[0];
         }
 
-        private void btnAddRoom_Click(object sender, EventArgs e)
+        public void ClearAll()
+        {
+            txtPrice.Clear();
+            txtRoomNo.Clear();
+            txtType.SelectedIndex = -1;
+            txtBed.SelectedIndex = -1;
+        }
+
+        private void UC_AddRoom_Leave(object sender, EventArgs e)
+        {
+            ClearAll();
+        }
+
+        private void UC_AddRoom_Enter(object sender, EventArgs e)
+        {
+            UC_AddRoom_Load(this, null);
+        }
+
+        private void btnAddRoom_Click_1(object sender, EventArgs e)
         {
             if (txtBed.Text != String.Empty && txtPrice.Text != String.Empty && txtRoomNo.Text != String.Empty && txtType.Text != String.Empty)
             {
@@ -46,24 +64,6 @@ namespace Hotel_Management_02.All_User_Control
             {
                 MessageBox.Show("Fill All Fields", "Warning !!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-        }
-
-        public void ClearAll()
-        {
-            txtPrice.Clear();
-            txtRoomNo.Clear();
-            txtType.SelectedIndex = -1;
-            txtBed.SelectedIndex = -1;
-        }
-
-        private void UC_AddRoom_Leave(object sender, EventArgs e)
-        {
-            ClearAll();
-        }
-
-        private void UC_AddRoom_Enter(object sender, EventArgs e)
-        {
-            UC_AddRoom_Load(this, null);
         }
     }
 }

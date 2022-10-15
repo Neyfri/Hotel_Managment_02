@@ -54,29 +54,6 @@ namespace Hotel_Management_02.All_User_Control
             txtPrice.Text = ds.Tables[0].Rows[0][0].ToString();
             rid = int.Parse(ds.Tables[0].Rows[0][1].ToString());
         }
-
-        private void btnAllocate_Click(object sender, EventArgs e)
-        {
-            if (txtName.Text !="" && txtNationality.Text !="" && txtGender.Text !="" && txtDoB.Text !="" && txtAddress.Text !="" && txtBed.Text !="" && txtCheckin.Text !="" && txtIdProof.Text !="" && txtMobile.Text !="" && txtPrice.Text !="" && txtPrice.Text !="" && txtRoomNo.Text !="" && txtRoomType.Text !="")
-            {
-                string name = txtName.Text;
-                string mobile = txtMobile.Text;
-                string national = txtNationality.Text;
-                string gender = txtGender.Text;
-                string dob = txtDoB.Text;
-                string idproof = txtIdProof.Text;
-                string address = txtAddress.Text;
-                string checking = txtCheckin.Text;
-
-                query = "insert into customer (cname, mobile, nationality, gender, dob, idproof, adress, checkin, room_id) values('"+name+"','"+mobile+"','"+national+"','"+gender+"','"+dob+"','"+idproof+"','"+address+"','"+checking+"','"+rid+"') update rooms set booked ='YES' where noRooom = '"+txtRoomNo.Text+"' ";
-                fn.setData(query, "Room Number "+txtRoomNo.Text+" Allocation Successful");
-                ClearAll();
-            }
-            else
-            {
-                MessageBox.Show("All Fields are mandatory","Information !!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-        }
         public void ClearAll()
         {
             txtRoomNo.Items.Clear();
@@ -96,6 +73,29 @@ namespace Hotel_Management_02.All_User_Control
         private void UC_CustomerRegistration_Leave(object sender, EventArgs e)
         {
             ClearAll();
+        }
+
+        private void btnAllocate_Click_1(object sender, EventArgs e)
+        {
+            if (txtName.Text != "" && txtNationality.Text != "" && txtGender.Text != "" && txtDoB.Text != "" && txtAddress.Text != "" && txtBed.Text != "" && txtCheckin.Text != "" && txtIdProof.Text != "" && txtMobile.Text != "" && txtPrice.Text != "" && txtPrice.Text != "" && txtRoomNo.Text != "" && txtRoomType.Text != "")
+            {
+                string name = txtName.Text;
+                string mobile = txtMobile.Text;
+                string national = txtNationality.Text;
+                string gender = txtGender.Text;
+                string dob = txtDoB.Text;
+                string idproof = txtIdProof.Text;
+                string address = txtAddress.Text;
+                string checking = txtCheckin.Text;
+
+                query = "insert into customer (cname, mobile, nationality, gender, dob, idproof, adress, checkin, room_id) values('" + name + "','" + mobile + "','" + national + "','" + gender + "','" + dob + "','" + idproof + "','" + address + "','" + checking + "','" + rid + "') update rooms set booked ='YES' where noRooom = '" + txtRoomNo.Text + "' ";
+                fn.setData(query, "Room Number " + txtRoomNo.Text + " Allocation Successful");
+                ClearAll();
+            }
+            else
+            {
+                MessageBox.Show("All Fields are mandatory", "Information !!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }

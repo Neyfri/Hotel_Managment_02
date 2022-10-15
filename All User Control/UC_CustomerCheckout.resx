@@ -120,4 +120,30 @@
   <metadata name="guna2Elipse1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnCheckOut.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAKcAAAAtCAYAAADLPXtSAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAR+SURBVHhe7d1NSCNnGAfwgJCvccxEJYYINurBXNzsRYk3
+        8STZBkLxsBoLPemily2YRdDFImIWerBYwYsgC1ssFAyIkJNICzXEtVokIpR2paVUCy7uh2ukgtPnybzL
+        VqrBrJmMuP8fDGScmSSSP+87837MmAA+BFZavuCltrY2sbi4+Inb7f6V1lVeCG/Lvsb6zVi32WwvKioq
+        NngJhUJV9Pf7tLTSci20y7L8rd1uf7m6upqamJhQR0ZG1Lm5OTWTyag7Ozv8T8ANxb/v8vJydmH82zc3
+        N7+WJOkV5aGB8hGmhQutogrHYrFHfX19exxIhBD+6+DgQN3d3VUDgcAbi8VyRHn5TIuNvm47nc5nPp/v
+        KJlMiq8CcLGNjQ11fn5+r7u7e5ryo09IPR7Pw3Q6neQqGyBfXPX7/f7DsrKyHyhOipaqq1OotPwpGAzS
+        aWRGfBTA+xkdHc1sbm5GKFc+LV5X0NHRMRONRk/EewNcGZeifNFE8WrXUpY/xeVy/cIntwCFlkgk3gbU
+        rcXt8qxclaPEBD1xK8/k5OTnlLfLn4N2dnYGu7q6jsR7AOiGC0CHw/GUYnep9tD28fHxZ+JYAN21tLRk
+        rFbrgMjfxbgdMx6Pi8MA9Le9va0uLCyMiwheqJ0b2MUxAEUTi8Vemc3mr0UO/8e6vr7+kLudAIqNc0dV
+        e4ZyeO7V+13uCxX7AhRdf3//sSzLn4o8vkPnmt9NT0+L3QCMMTg42Edx9GqpFBobG7cwugiMxN3jNpvt
+        mOI4q6VS41tbW/tZ7ANgGG5fpzzygGaNxWIZo+JUbAYwDndrlpSUcLemprKy8sns7KzYDGAcrtolSfpd
+        RNNkUhTlNzS8w3XA1z0UyXfVOsm20gMYjUtOzqMWS42KaRdwHfAQTa/XuylymZVtoQcwGlfrAwMDD0Qu
+        s7hvU2wGMA6Pki8vL/9R5DJLDYfDh2I7gGGGh4dPLBbLlyKXWclgMLgqtgMYZmhoiAceB7RYasKRSOQ+
+        LorASHy+GQqFHotMnnEPUzPASGNjYyc2m+0bkccz3Nzpjqt2MAK3byqKwuM5z58uXFNTE9nf3/9b7A9Q
+        NKenp5mGhoZ7Iornq6qq+hOlJxQTl5qUu+cUv9xz2HkWXFtb27E4DkB3fK4pSVJCRDAnK9X9W+l0GgEF
+        3XGp6fF4tih3Z0e/59LT0/OYx9YB6IWbjrh9XUQuLwFZlg/5/ooAhcYDPFwu1xvKWe6LoBzu+v3+P8T7
+        ARRMb2/vNs/AEDl7f01NTSnMzIRC4IEddXV1f1GsCnaveB8Pned5xeIzAPI2MzPzj9ls5qr8TN95ISjc
+        SD81NRXnkSN8lQVwGTw/LRqNft/a2nqHcpT3/Tjz4aVSNO5wOI64iMbNZeE8b5+owRc9drs9Sbkp6vOJ
+        AqFQ6FZ9ff3T6urql1ya8hfCXKQPEzcLcW3Kg9YpEy/4AVpLS0sfUU74WUSGus13CEulUh/z07xoPTtJ
+        aWVl5Sun03mA9Zu7Xlpa+ppfUxj3+Kl9VKM+onXDAwmgI5PpX6O09cHY4ruZAAAAAElFTkSuQmCC
+</value>
+  </data>
 </root>

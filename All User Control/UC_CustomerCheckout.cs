@@ -31,7 +31,7 @@ namespace Hotel_Management_02.All_User_Control
             getRecord(query);
         }
         int id;
-        private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void DataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
             if (DataGridView1.Rows[e.RowIndex].Cells[0].Value != null)
             {
@@ -40,26 +40,6 @@ namespace Hotel_Management_02.All_User_Control
                 txtRoomNo.Text = DataGridView1.Rows[e.RowIndex].Cells[9].Value.ToString();
             }
         }
-
-        private void btnCheckOut_Click(object sender, EventArgs e)
-        {
-            if (txtCName.Text != "")
-            {
-                if (MessageBox.Show("Are You Sure?","Confirmation",MessageBoxButtons.OKCancel,MessageBoxIcon.Warning) == DialogResult.OK)
-                {
-                    string cdate = txtDateCheckOut.Text;
-                    query = "UPDATE customer SET chekout = 'YES', checkout = '"+cdate+"' WHERE cid = '"+id+"' UPDATE rooms SET booked = 'NO' WHERE noRooom = '"+txtRoomNo.Text+"'";
-                    fn.setData(query,"Check Out Successfully!");
-                    UC_CustomerCheckout_Load(this, null);
-                    ClearAll();
-                }
-            }
-            else
-            {
-                MessageBox.Show("No Customer Selected.","Message",MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-        }
-
         public void ClearAll()
         {
             txtCName.Clear();
@@ -77,6 +57,25 @@ namespace Hotel_Management_02.All_User_Control
         {
             DataSet ds = fn.getData(query);
             DataGridView1.DataSource = ds.Tables[0];
+        }
+
+        private void btnCheckOut_Click(object sender, EventArgs e)
+        {
+            if (txtCName.Text != "")
+            {
+                if (MessageBox.Show("Are You Sure?", "Confirmation", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
+                {
+                    string cdate = txtDateCheckOut.Text;
+                    query = "UPDATE customer SET chekout = 'YES', checkout = '" + cdate + "' WHERE cid = '" + id + "' UPDATE rooms SET booked = 'NO' WHERE noRooom = '" + txtRoomNo.Text + "'";
+                    fn.setData(query, "Check Out Successfully!");
+                    UC_CustomerCheckout_Load(this, null);
+                    ClearAll();
+                }
+            }
+            else
+            {
+                MessageBox.Show("No Customer Selected.", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }

@@ -37,6 +37,13 @@ namespace Hotel_Management_02.All_User_Control
                 getRecord(query);
             }
         }
+
+        private void txtSearchId_TextChanged(object sender, EventArgs e)
+        {
+            query = "SELECT C.cid, C.cname, C.mobile, C.nationality, C.gender, C.dob, C.idproof, C.adress, C.checkin,C.checkout, R.noRooom, R.roomType, R.bed, R.price FROM customer AS C INNER JOIN rooms AS R ON C.room_id = R.idRoom WHERE C.idproof LIKE '"+txtSearchId.Text+"%'";
+            getRecord(query);
+        }
+
         private void getRecord(string query)
         {
             DataSet ds = fn.getData(query);

@@ -12,6 +12,8 @@ namespace Hotel_Management_02
 {
     public partial class Login : Form
     {
+        function fn = new function();
+        string query;
         public Login()
         {
             InitializeComponent();
@@ -24,12 +26,22 @@ namespace Hotel_Management_02
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (txtUsername.Text == "admin" && txtPassword.Text == "admin")
+            if (txtUsername.Text != "" && txtPassword.Text != "")
             {
-                lblError.Visible = false;
-                Dashboard dashboard = new Dashboard();
-                this.Hide();
-                dashboard.Show();
+                query = "SELECT username, pass FROM employee WHERE username LIKE '"+txtUsername.Text+"' AND pass LIKE '"+txtPassword.Text+"'";
+                DataSet ds = fn.getData(query);
+                if (ds.Tables[0].Rows.Count > 0)
+                {
+                    lblError.Visible = false;
+                    Dashboard dashboard = new Dashboard();
+                    this.Hide();
+                    dashboard.Show();
+                }
+                else
+                {
+                    lblError.Visible = true;
+                    txtPassword.Clear();
+                }
             }
             else
             {
